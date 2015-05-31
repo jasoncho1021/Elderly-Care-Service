@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="주거"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <CheckBox
+            android:id="@+id/Chbx0_r"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="주거 공간이 충분하지 않은가" />
+
+        <CheckBox
+            android:id="@+id/Chbx1_r"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="생활 용품이 부족한가(화장지, 수건 등)" />
+
+        <CheckBox
+            android:id="@+id/Chbx2_r"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="보일러 작동에 이상이 있는가" />
+
+        <CheckBox
+            android:id="@+id/Chbx3_r"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="가스가 누출 되는가" />
+
+        <CheckBox
+            android:id="@+id/Chbx4_r"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="전기 이용 관련한 위험이 있는가" />
+
+        <CheckBox
+            android:id="@+id/Chbx5_r"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="누수가 되는 곳이 있는가" />
+
+        <CheckBox
+            android:id="@+id/Chbx6_r"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="이외에 위험한 요소가 있는가" />
+
+        <CheckBox
+            android:id="@+id/Chbx7_r"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="수리를 요하는 곳이 있는가" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="재방문 여부"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <RadioGroup
+            android:id="@+id/Rdgrp_r"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/Rdbtn0_r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="4회 이상" />
+            
+             <RadioButton
+                android:id="@+id/Rdbtn1_r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3회" />
+
+            <RadioButton
+                android:id="@+id/Rdbtn2_r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2회" />
+
+            <RadioButton
+                android:id="@+id/Rdbtn3_r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1회" />
+
+            <RadioButton
+                android:id="@+id/Rdbtn4_r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="없음" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="주거 상태"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <RatingBar
+            android:id="@+id/ratingBar_r"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+</ScrollView>

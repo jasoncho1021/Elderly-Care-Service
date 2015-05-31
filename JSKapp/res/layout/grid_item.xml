@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/text"
+	android:layout_width="match_parent"
+	android:layout_height="40dip"
+	android:minHeight="40dip"
+	android:gravity="center"	
+	android:textColor="#ff000000"	
+	android:background="@drawable/my_transition"	
+	/>
+
+<!--
+android:background="#00ff00"
+
+
+android:background="@drawable/sms"
+ android:background="@drawable/grid_line" 
+ android:maxHeight="40dip"
+ android:stretchMode="columnWidth"
+ -->

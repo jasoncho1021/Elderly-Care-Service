@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="경제"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <CheckBox
+            android:id="@+id/Chbx0_e"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="현재 경제활동을 하지 않고 있다" />
+
+        <CheckBox
+            android:id="@+id/Chbx1_e"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="앞으로 경제활동이 불가능 하다" />
+
+        <CheckBox
+            android:id="@+id/Chbx2_e"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="경제적 지원을 해주는 보호자가 없다" />
+
+        <CheckBox
+            android:id="@+id/Chbx3_e"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="지출이 소득 수준 평균에 미치지 않는다" />
+
+        <CheckBox
+            android:id="@+id/Chbx4_e"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="수입이 소득 수준 평균에 미치지 않는다" />
+
+        <CheckBox
+            android:id="@+id/Chbx5_e"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="일정한 수입원이 있다" />
+
+        <CheckBox
+            android:id="@+id/Chbx6_e"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="수입원이 전무하다" />
+
+        <CheckBox
+            android:id="@+id/Chbx7_e"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="국가지원을 받고 있다" />
+
+        <TextView
+            android:id="@+id/textview3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="노인상대소득수준"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <RadioGroup
+            android:id="@+id/Rdgrp_e"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             >
+
+            <RadioButton
+                android:id="@+id/Rdbtn0_e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="안정" />
+
+            <RadioButton
+                android:id="@+id/Rdbtn1_e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="상" />
+
+            <RadioButton
+                android:id="@+id/Rdbtn2_e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="중" />
+            
+            <RadioButton
+                android:id="@+id/Rdbtn3_e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="하" />
+            
+            <RadioButton
+                android:id="@+id/Rdbtn4_e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="불안정" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="재정능력"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <RatingBar
+            android:id="@+id/ratingBar_e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+</ScrollView>

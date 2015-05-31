@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B2E6E5"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/genderGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/maleBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M" />
+
+            <RadioButton
+                android:id="@+id/femaleBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="F" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/setAgeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/genderGroup"
+            android:text="AGE" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="204dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/genderGroup"
+            android:ems="10"
+            android:text=" "
+            android:hint="enter name to search" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp" >
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/etName"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="17dp"
+            android:layout_toRightOf="@+id/etName"
+            android:background="@drawable/search"
+            android:minHeight="55dp"
+            android:minLines="30"
+            android:minWidth="55dp" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffff0000"
+        android:text="empty list" />
+
+</LinearLayout>

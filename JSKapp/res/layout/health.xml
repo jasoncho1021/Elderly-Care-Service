@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="건강"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <CheckBox
+            android:id="@+id/Chbx0_h"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="입냄새가 심하게 난다" />
+
+        <CheckBox
+            android:id="@+id/Chbx1_h"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="하루에 한번 이상 변을 보지 못한다" />
+
+        <CheckBox
+            android:id="@+id/Chbx2_h"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="두통이 심하다" />
+
+        <CheckBox
+            android:id="@+id/Chbx3_h"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="소화가 잘 되지 않는다" />
+
+        <CheckBox
+            android:id="@+id/Chbx4_h"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="입맛이 없다" />
+
+        <CheckBox
+            android:id="@+id/Chbx5_h"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="잠에 잘 들지 못한다" />
+
+        <CheckBox
+            android:id="@+id/Chbx6_h"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="아침에 일어나기 힘들다" />
+
+        <CheckBox
+            android:id="@+id/Chbx7_h"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="우울증 증세를 보인다" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="얼굴색"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <RadioGroup
+            android:id="@+id/Rdgrp_h"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/Rdbtn0_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="노랗다" />
+
+            <RadioButton
+                android:id="@+id/Rdbtn1_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="검푸르스름하다" />
+
+            <RadioButton
+                android:id="@+id/Rdbtn2_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="창백하고 혈색이 없다" />
+
+            <RadioButton
+                android:id="@+id/Rdbtn3_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="지나치게 붉다" />
+
+            <RadioButton
+                android:id="@+id/Rdbtn4_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="까맣다" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="건강 상태"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <RatingBar
+            android:id="@+id/ratingBar_h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+</ScrollView>

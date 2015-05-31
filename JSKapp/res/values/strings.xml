@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ACTIVITY -->
+    <string name="app_name">MP_TermProject_v3</string>
+    <string name="action_settings">Settings</string>
+    <!-- HOME SECTION -->
+    <string name="home_textview1">Home section</string>
+    <string name="home_button1">Enter to schedule</string>
+    <!-- SCHEDULE SECTION -->
+    <string name="schedule_textview1">Schedule section</string>
+    <string name="schedule_description">Schedule</string>
+    <!-- SEARCH SECTION -->
+    <string name="search_textview1">Search section</string>
+
+    <string name="lastup">Updated:</string>
+    <string name="lastlatlng">Last Location: </string>
+	
+	<string name="menu_settings">Menu Settings</string>
+    <string name="title_main">WalkThisWay</string>
+	<string name="address">Address:</string>
+    <string name="enable_gps">Enable GPS</string>
+    <string name="enable_gps_dialog">GPS provider not enabled. Would you like to enable it?</string>
+    <string name="latlng">Current Location:</string>
+    <string name="unknown">--Unknown--</string>
+    <string name="no_gps_support">GPS provider not supported</string>
+    <string name="no_network_support">Network provider not supported</string>
+    
+        <string name="app_name">HelloNFC</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="hello_nfc_please_touch_a_tag">Please touch a tag..</string>
+    
+
+</resources>

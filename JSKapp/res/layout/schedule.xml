@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:background="#B2E6E5"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/schedule_textview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Weekly Schedule" />
+
+    <GridView
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="-1px"
+        android:verticalSpacing="-1px"
+        android:numColumns="6"  
+                >
+    </GridView>
+
+    <!--
+        android:horizontalSpacing="-1px"
+        android:columnWidth="50dp"        
+        android:verticalSpacing="-1px"
+    -->
+
+   <ImageButton
+        android:id="@+id/schBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Schedule" 
+          android:src="@drawable/schedule"
+             android:background="#00000000"/>
+
+</LinearLayout>

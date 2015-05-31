@@ -1,0 +1,313 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#FFF29E"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#EAEAEA"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/nfcBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="125dp"
+            android:layout_weight="0.45"
+            android:background="#00000000"
+            android:minHeight="300dp"
+            android:src="@drawable/key"
+            android:text="방문확인" />
+
+        <ImageButton
+            android:id="@+id/checkBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="186dp"
+            android:layout_gravity="fill"
+            android:background="#00000000"
+            android:minHeight="300dp"
+            android:onClick="onClick"
+            android:src="@drawable/check"
+            android:text="체크리스트" />
+
+        <ImageButton
+            android:id="@+id/findWay"
+            android:layout_width="wrap_content"
+            android:layout_height="149dp"
+            android:background="#00000000"
+            android:minHeight="300dp"
+            android:src="@drawable/way"
+            android:text="길찾기" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/linearLayout1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFA1"
+            android:text="신상 정보"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000" />
+
+        <TableLayout
+            android:id="@+id/TableLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1" >
+
+            <TableRow android:background="#FFEBFF" >
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFD9FA"
+                    android:text="* Name       : "
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/nameTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="조재훈"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            </TableRow>
+
+            <TableRow android:background="#FFEBFF" >
+
+                <TextView
+                    android:id="@+id/age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFD9FA"
+                    android:text="* Age           :"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ageTxt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="27"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            </TableRow>
+
+            <TableRow android:background="#FFEBFF" >
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFD9FA"
+                    android:text="* Phone     :"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/telTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="3"
+                    android:text="010-7597-8002"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+     
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+            </TableRow>
+
+            <TableRow
+                android:background="#FFEBFF"
+              
+                android:gravity="left" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true" >
+
+                        <ImageButton
+                            android:id="@+id/callBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:background="@drawable/phone_"
+                            android:onClick="onClick"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/phone_" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <ImageButton
+                    android:id="@+id/smsBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="fill"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/sms"
+                    android:onClick="onClick" />
+
+            </TableRow>
+
+            <TableRow android:background="#FFEBFF" >
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFD9FA"
+                    android:text="* Address    :"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow android:background="#FFEBFF" >
+
+                <TextView
+                    android:id="@+id/addressTxt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_span="3"
+                    android:text="서울시 강서구 행복동 천사아파트 1004호"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            </TableRow>
+
+            <TableRow android:background="#FFEBFF" >
+
+                <TextView
+                    android:id="@+id/activity"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFD9FA"
+                    android:text="* 성별         :"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/stateTxt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="Bad"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            </TableRow>
+
+            <TableRow android:background="#FFEBFF" >
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFD9FA"
+                    android:text="* 방문시간 :"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dateTxt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="Mon"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            </TableRow>
+
+            <TableRow android:background="#FFEBFF" >
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFD9FA"
+                    android:text="* 생년월일 :"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/timeTxt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="5"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/linearLayout2"
+        android:layout_weight="0.39"
+        android:background="#FFFFE9" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.39"
+            android:src="@drawable/ic_launcher" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_alignRight="@+id/linearLayout2"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</RelativeLayout>
